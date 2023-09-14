@@ -33,7 +33,7 @@ const ProtectedRoute = ({ children }) => {
     );
 
   // 4. If there IS a user, render the app
-  return children;
+  if (isAuthenticated) return children;
 };
 
 export default ProtectedRoute;
